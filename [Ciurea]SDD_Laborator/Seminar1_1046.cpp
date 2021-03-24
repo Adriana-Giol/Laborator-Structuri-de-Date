@@ -191,7 +191,7 @@ void citire4Vectori(int* cod, char** denumire, float* pret, float* cantitate, in
 		}*/
 	}
 	//**************************************** MATRICE *********************************************************
-	/*
+	
 //-- CITIRE MATRICE
 	void citireMatrice(float** mat, int n) {
 		for (int i = 0; i < n; i++) {
@@ -218,10 +218,17 @@ void citire4Vectori(int* cod, char** denumire, float* pret, float* cantitate, in
 		}
 		delete[]mat;
 		
-		
 	}
-	*/
-
+//-- FUNCTIE DE CALCULARE A SUMEI
+float sumaTotala(float** mat, int n)
+{
+	float suma = 0;
+	for (int i = 0; i < n; i++)
+		suma += mat[i][1] * mat[i][2];
+	return suma;
+}
+	
+/*
 	//************************************** MATRICE CU DENUMIRILE ATASATE ********************************************
 	// Atasare matricei curente vectorul de denumiri
 	//-- CITIRE MATRICE
@@ -262,7 +269,7 @@ void citire4Vectori(int* cod, char** denumire, float* pret, float* cantitate, in
 		delete[]denumire;
 
 
-	}
+	}*/
 
 void main() {
 	// Declaram o variabila int n - numar de elemente(Produs) din vector pe care il citim
@@ -312,8 +319,17 @@ void main() {
 		mat[i] = new float[3];
 	}
 
-	//APEL FUNCTII MATRICE
+	/*APEL FUNCTII MATRICE CU DENUMIRE
 	citireMatrice(mat,denumire, n);
 	afisareMatrice(mat, denumire,n);
-	dezalocareMatrice(mat,denumire, n);
+	dezalocareMatrice(mat, denumire, n);*/
+
+	//APEL FUNCTII MATRICE
+	citireMatrice(mat, n);
+	afisareMatrice(mat, n);
+	cout << "Suma totala este: " << sumaTotala(mat, n);
+	dezalocareMatrice(mat, n);
+	
+
+	
 }
