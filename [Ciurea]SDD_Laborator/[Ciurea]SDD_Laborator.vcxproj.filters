@@ -15,10 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Seminar1_1046.cpp">
+    <ClCompile Include="Seminar5_1046.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Seminar2_1046.cpp">
+    <ClCompile Include="Seminar3_1046.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar4_1046.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar1_1046[vector-matrice].cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar2_1046.[lista_simpla]cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
