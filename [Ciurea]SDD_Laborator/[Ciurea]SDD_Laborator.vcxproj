@@ -139,8 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Seminar1_1046.cpp" />
-    <ClCompile Include="Seminar2_1046.cpp" />
+    <ClCompile Include="Seminar1_1046[vector-matrice].cpp" />
+    <ClCompile Include="Seminar2_1046.[lista_simpla]cpp" />
+    <ClCompile Include="Seminar3_1046.cpp" />
+    <ClCompile Include="Seminar4_1046.cpp" />
+    <ClCompile Include="Seminar5_1046.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
