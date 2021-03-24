@@ -1,3 +1,3 @@
 ﻿  Seminar1_1046.cpp
-C:\Users\Adriana\Desktop\GitHub Local Repository\Structuri-de-Date\[Ciurea]SDD_Laborator\Seminar1_1046.cpp(100,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Adriana\Desktop\GitHub Local Repository\Structuri-de-Date\[Ciurea]SDD_Laborator\Seminar1_1046.cpp(267,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   [Ciurea]SDD_Laborator.vcxproj -> C:\Users\Adriana\Desktop\GitHub Local Repository\Structuri-de-Date\[Ciurea]SDD_Laborator\Debug\[Ciurea]SDD_Laborator.exe
