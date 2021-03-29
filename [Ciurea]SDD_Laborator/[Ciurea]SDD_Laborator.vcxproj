@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Seminar1_1046[vector-matrice].cpp" />
-    <ClCompile Include="Seminar2_1046.[lista_simpla]cpp" />
+    <ClCompile Include="Seminar1_1046[vector-matrice].cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Seminar2_1046[lista_simpla].cpp" />
     <ClCompile Include="Seminar3_1046.cpp" />
     <ClCompile Include="Seminar4_1046.cpp" />
     <ClCompile Include="Seminar5_1046.cpp" />
