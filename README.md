@@ -2,8 +2,8 @@
 ## Structuri de Date dinamice necontigue
 ## Matrice rare
 ## Structuri de date de tip graf
-### Algoritmi de traversare a unui graf
-### Conectivitate si Algortimi de conectivitate
+1. Algoritmi de traversare a unui graf
+2. Conectivitate si Algortimi de conectivitate
 
 ## Structuri de date arborescente
 1. Arbore oarecare 
