@@ -1,11 +1,16 @@
 # 📚Structuri de Date📚
-## Structuri de Date dinamice necontigue
-## Matrice rare
+## I. Structuri de Date dinamice necontigue
+1. Lista simpla inlantuita
+2. Lista dubla inlantuita
+3. Stiva
+4. Coada
+## II. Matrice rare
+1. Structuri de date neomogene si contigue
 ## Structuri de date de tip graf
 1. Algoritmi de traversare a unui graf
 2. Conectivitate si Algortimi de conectivitate
 
-## Structuri de date arborescente
+## III. Structuri de date arborescente
 1. Arbore oarecare 
 2. Arbore binar
 3. Arbori de structura
@@ -15,9 +20,13 @@
 7. Arbori Rosu si Negru
 8. Arbore B
 
-## Tabele de dispersie
+## IV. Tabele de dispersie
+1. Caracteristici
+2. Functii hash 
+3. Operatii de evitare a coliziunilor
 
-## Strctura HEAP
+## V. Strctura HEAP
+1. Cozi de prioritate
 
-## Compactarea si compresia datelor
+## VI. Compactarea si compresia datelor
 
