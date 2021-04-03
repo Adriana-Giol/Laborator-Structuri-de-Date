@@ -1,11 +1,17 @@
 # 📚Structuri de Date📚
+## Recapitulare
+1. Vector
+2. Matrice
+
 ## I. Structuri de Date dinamice necontigue
-1. Lista simpla inlantuita
-2. Lista dubla inlantuita
+[1. Lista simpla inlantuita]()
+[2. Lista dubla inlantuita]()
 3. Stiva
 4. Coada
+
 ## II. Matrice rare
 1. Structuri de date neomogene si contigue
+
 ## Structuri de date de tip graf
 1. Algoritmi de traversare a unui graf
 2. Conectivitate si Algortimi de conectivitate
