@@ -16,14 +16,18 @@ Avem structura in cadrul careia incapsulam diferite atribute de tipuri fundament
 
 ## 🚩Structuri de date
 ⛓️ **Stiva si Coada = avem implementate operatii de inserare/scoatere (Stiva - push/pop)(Coada - put/get) din lista cu dezalocare**</br>
+
 ⛓️ **ARBORI BINARI DE CAUTARE:**</br>
      - operatii de inserare: toate nodurile Stanga < Radacina < Dreapta</br>
      - numarare de noduri</br>
      - 🔺CAZ PARTICUALAR DE ARBORE BINAR = HEAP (Coada de prioritati) - se implementeaza ca vector</br>
+    
 ⛓️ **TABELE DE DISPERSIE:**(2 implementari):</br>
      1. Evitarea coeziunilor (Chaining) - Vectori de pointeri la liste</br>
      2. Linear Probing - un singur vector in care sunt ocupate doar pozitiile cu functia HASH care ne spune unde ar trebui sa se insereze</br>
+ 
 ⛓️**GRAFURI**</br>
+
 ⛓️**FISIERE:**</br>
       - Citire/Salvare date dintr-un fisier text</br>
       - Arbore binar - preluare date dintr-un fisier text (inserare nodurilor intr-un arbore)</br>
