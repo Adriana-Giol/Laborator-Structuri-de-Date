@@ -4,10 +4,10 @@
 2. Matrice
 
 ## I. Structuri de Date dinamice necontigue
-[1. Lista simpla inlantuita]()
-[2. Lista dubla inlantuita]()
-3. Stiva
-4. Coada
+[1. Lista simpla inlantuita]()</br>
+[2. Lista dubla inlantuita]()</br>
+[3. Stiva]()</br>
+[4. Coada]()</br>
 
 ## II. Matrice rare
 1. Structuri de date neomogene si contigue
