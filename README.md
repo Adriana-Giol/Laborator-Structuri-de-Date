@@ -1,5 +1,5 @@
 # 📚Structuri de Date📚
-[Prezentare Generala](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Prezentare%20Generala.md)
+✔️[Prezentare Generala](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Prezentare%20Generala.md)
 
 ## Recapitulare
 [1. Vector](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Vector.md)
