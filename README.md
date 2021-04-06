@@ -2,8 +2,8 @@
 ✔️[Prezentare Generala](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Prezentare%20Generala.md)
 
 ## Recapitulare
-[1. Vector](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Vector.md)
-[2. Matrice](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Matrice.md)
+[1. Vector](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Vector.md)</br>
+[2. Matrice](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Matrice.md)</br>
 
 ## I. Structuri de Date dinamice necontigue
 [1. Lista simpla inlantuita]()</br>
