@@ -21,7 +21,7 @@
 ## III. Structuri de date arborescente
 [1. Arbore oarecare]()</br>
 [2. Arbore binar]()</br>
-[3. Arbori de structura]()</br>
+[3. Arbori de structura - Structura HEAP]()</br>
 [4. Arbore binar de cautare]()</br>
 [5. Arbori binari echilibrati]()</br>
 [6. Arbori AVL]()</br>
