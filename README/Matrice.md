@@ -1,5 +1,5 @@
 # 2. Matrice
-🔮[**Cod Sursa**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/%5BCiurea%5DSDD_Laborator/Seminar1_1046%5Bvector-matrice%5D.cpp)🔮
+🔮[**Cod Sursa**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/%5BCiurea%5DSDD_Laborator/Seminar1_1046%5Bvector-matrice%5D.cpp)🔮</br>
 Vectorul este un spatiu contiguu de memorie, unde trebuie sa stiu adresa de inceput (acel P[0] - care este adresa primului element din vector si apoi celelalte elemente sunt dispuse in continuare. Am acces la toate elementele pe baza de index.
 Matricea inseamna un vector de vectori cu conditia ca toate elementele din acei vectori sa fie de acelasi tip.
 
