@@ -11,8 +11,8 @@ Avem structura in cadrul careia incapsulam diferite atribute de tipuri fundament
 5️⃣Traversare cu **prelucrare**: numarare</br>
 6️⃣Operatii ce presupun scoaterea de elemente</br>
 7️⃣**CONVERSII**</br>
-*Avem o structura de baza (lista simpla) si vreau sa fac conversie din lista simpla in vector* *In urma conversiei lista o sa dispara: deci nu o sa am si vector si lista*
-*In momentul in care iau nod cu nod din lista pentru a insera in vector, atunci ma asigur ca lista este si dezalocata*
+*Avem o structura de baza (lista simpla) si vreau sa fac conversie din lista simpla in vector.* *In urma conversiei lista o sa dispara: deci nu o sa am si vector si lista*
+*In momentul in care iau nod cu nod din lista pentru a insera in vector, atunci ma asigur ca lista este si dezalocata.*
 
 ## 🚩Structuri de date
 ⛓️ **Stiva si Coada = avem implementate operatii de inserare/scoatere (Stiva - push/pop)(Coada - put/get) din lista cu dezalocare**</br>
