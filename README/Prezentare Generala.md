@@ -15,7 +15,7 @@ Avem structura in cadrul careia incapsulam diferite atribute de tipuri fundament
 *In momentul in care iau nod cu nod din lista pentru a insera in vector, atunci ma asigur ca lista este si dezalocata.*
 
 ## 🚩Structuri de date
-⛓️ **Stiva si Coada = avem implementate operatii de inserare/scoatere (Stiva - push/pop)(Coada - put/get) din lista cu dezalocare**</br>
+⛓️ **Stiva si Coada = avem implementate operatii de inserare/scoatere de noduri cu dezalocare (Stiva - push/pop)(Coada - put/get) din lista cu dezalocare**</br>
 
 ⛓️ **ARBORI BINARI DE CAUTARE:**</br>
      - operatii de inserare: toate nodurile Stanga < Radacina < Dreapta</br>
