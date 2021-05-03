@@ -142,7 +142,7 @@ void afisareVectProd(produs *p, int n)
 	for(int i=0;i<n;i++)
 		printf("\nCod=%d, Denumire=%s, Pret=%5.2f, Cantitate=%5.2f",
 		p[i].cod, p[i].denumire, p[i].pret, p[i].cantitate);
-		//*(p[i].cod)
+		//*(p[i].cod)  -- pentru int* cod;
 		
 }
 ```
@@ -201,7 +201,7 @@ void dezalocareVector(produs* p, int n)
 {
 	for (int i = 0; i < n; i++)
 		delete[] p[i].denumire;
-		                                delete[] p[i].cod; -- pentru int* cod;
+		                                //delete[] p[i].cod; -- pentru int* cod;
 	delete[] p;
 }
 ```
