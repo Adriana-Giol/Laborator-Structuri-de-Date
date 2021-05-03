@@ -3,10 +3,10 @@
 
 ## Recapitulare
 ✔️[**1. Vector**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Vector.md)</br>
-[**2. Matrice**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Matrice.md)</br>
+✔️[**2. Matrice**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Matrice.md)</br>
 
 ## I. Structuri de Date dinamice necontigue
-[**1. Lista simpla inlantuita**]()</br>
+⚠️[**1. Lista simpla inlantuita**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Lista%20Simpla%20Inlantuita.md)</br>
 [**2. Lista dubla inlantuita**]()</br>
 [**3. Stiva**]()</br>
 [**4. Coada**]()</br>
