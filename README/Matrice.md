@@ -238,7 +238,7 @@ void main()
 ![image](https://user-images.githubusercontent.com/60271540/116927789-cc58a280-ac64-11eb-98eb-de9bdcba6238.png)
 
 ## Matrice cu denumirile atasate
-6️⃣**PAS 6: Adaugare in cele 3 functii (citire, afisare, dezalocare) si vectorul de denumiri, iar la afisare sa se vada si denumirile.**
+6️⃣**PAS 6: Adaugare in cele 3 functii (citire, afisare, dezalocare) si vectorul de denumiri, iar la afisare sa se vada si denumirile.**</br>
 🔴**CITIRE**
 <!--************************************ TABEL****************************************************-->
 <table>
