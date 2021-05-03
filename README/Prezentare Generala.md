@@ -7,7 +7,7 @@ Avem structura in cadrul careia incapsulam diferite atribute de tipuri fundament
 3️⃣Operatia de stergere (Dezalocare a spatiului de memorie)</br>
 4️⃣Traversare cu **afisare**</br>
 ➖ Traversare doar intr-o anumita ordine - **Lista Simpla: traversare de la cap la coada**</br>
-➖ Traversare in abele directii - **Lista Dubla: patrarea ambilor pointeri, actualizati permanant cand se adauga sau se sterge un nod**</br>
+➖ Traversare in abele directii - **Lista Dubla: pastrarea ambilor pointeri, actualizati permanant cand se adauga sau se sterge un nod**</br>
 5️⃣Traversare cu **prelucrare**: numarare</br>
 6️⃣Operatii ce presupun scoaterea de elemente</br>
 7️⃣**CONVERSII**</br>
