@@ -149,8 +149,45 @@ void dezalocareMatrice(float** mat, int n)
 </table>
 <!--************************************ TABEL****************************************************-->
 
+ 4️⃣**PAS 4: Functie de calcul a sumei.**
+ <!--************************************ TABEL****************************************************-->
+<table>
+<tbody>
+<!------------------------------------------ TITLU-------------------------------------------------->
+<tr>
+<th>Limbajul C</th>
+<th>Limbajul C++</th>
+</tr>
+<!----------------------------------------- TITLU--------------------------------------------------->	
+<!--------------------------------------- PRIMA COLOANA - LIMBAJUL C--------------------------------->
+<tr>-
+<td>
 
-4️⃣🟢**PAS 4: In Main, dupa ce am alocat matricea, apelam functiile create mai sus.**
+```cpp
+
+```
+				
+</td>
+<!------------------------------------ A DOUA COLOANA - LIMBAJUL C++------------------------------------>
+<td>
+	
+```cpp
+float sumaTotala(float** mat, int n)
+{
+	float suma = 0;
+	for (int i = 0; i < n; i++)
+		suma += mat[i][1] * mat[i][2];
+	return suma;
+}
+```
+</td>
+</tr>
+</tbody>
+</table>
+<!--************************************ TABEL****************************************************-->
+
+
+5️⃣🟢**PAS 5: In Main, dupa ce am alocat matricea, apelam functiile create mai sus.**
 <!--************************************ TABEL****************************************************-->
 <table>
 <tbody>
@@ -181,9 +218,13 @@ void main()
 		mat[i] = new float[3];      //3 pentru ca avem 3 elemente (cod, pret, cantitate)
    
    //Apelare functii create anterior
-  citireMatrice(mat, n);
+        citireMatrice(mat, n);
 	afisareMatrice(mat, n);
+	
+	cout << "Suma totala este: " << sumaTotala(mat, n);
+	
 	dezalocareMatrice(mat, n);
+	
   
 }
 ```
@@ -197,7 +238,7 @@ void main()
 ![image](https://user-images.githubusercontent.com/60271540/116927789-cc58a280-ac64-11eb-98eb-de9bdcba6238.png)
 
 ## Matrice cu denumirile atasate
-5️⃣**PAS 5: Adaugare in cele 3 functii (citire, afisare, dezalocare) si vectorul de denumiri, iar la afisare sa se vada si denumirile.**
+6️⃣**PAS 6: Adaugare in cele 3 functii (citire, afisare, dezalocare) si vectorul de denumiri, iar la afisare sa se vada si denumirile.**
 🔴**CITIRE**
 <!--************************************ TABEL****************************************************-->
 <table>
