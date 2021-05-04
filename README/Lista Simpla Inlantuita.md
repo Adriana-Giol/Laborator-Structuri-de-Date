@@ -51,6 +51,33 @@ Returnam Nodls* si primim ca parametri nolds* cap (adresa de inceput a structuri
 <td>
 
 ```cpp
+nodls* inserare(nodls *cap, produs p)
+{
+	nodls *nou = (nodls*)malloc(sizeof(nodls));
+	
+	//Initializam componentele din nod 
+	//-- Informatia Utila
+	nou->inf->denumire = (char*)malloc((strlen(p->denumire)+1)*sizeof(char));
+	strcpy(nou->inf->denumire, p->denumire);
+	nou->inf->cod = p->cod;
+	nou->inf->pret = p->pret;
+	nou->inf->cantitate = p->cantitate;
+	
+	//-- Pointerul de legatura catre nodul urmator
+	nou->next = NULL;
+	
+	if(cap==NULL)
+		cap = nou;
+	else
+	{
+		nodls *temp = cap;
+		while(temp->next!=NULL)
+			temp = temp->next;
+		temp->next = nou;
+	}
+	return cap;
+}
+
 
 ```
 				
