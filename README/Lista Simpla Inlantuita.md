@@ -4,6 +4,11 @@ Lista Simpla = O inlantuire de noduri si fiecare nod are un pointer catre nodul 
 - Este o structura de date dinamica cu acces secvential.</br>
 
 ## 🗝️ Rezolvare: </br>
+🔴Creare si inserare nod in lista</br>
+🟠Traversare cu afisare lista </br>
+🟡Traversare cu dezalocare lista</br>
+![Lista Simpla -Inserare, Dezalocare, Afisare](https://user-images.githubusercontent.com/60271540/117066914-0479e700-ad32-11eb-84ff-4a07b7ac37f9.png)
+
 0️⃣**PAS 0: Definim structura Produs**</br>
 ```cpp
 #include<stdio.h>
@@ -51,9 +56,10 @@ Returnam Nodls* si primim ca parametri nolds* cap (adresa de inceput a structuri
 <td>
 
 ```cpp
-nodls* inserare(nodls *cap, produs p)
+//Functie de inserare in lista simpla
+nodls* inserare(NodLS *cap, Produs p)
 {
-	nodls *nou = (nodls*)malloc(sizeof(nodls));
+	NodLS *nou = (nodls*)malloc(sizeof(nNdLS));
 	
 	//Initializam componentele din nod 
 	//-- Informatia Utila
@@ -70,7 +76,7 @@ nodls* inserare(nodls *cap, produs p)
 		cap = nou;
 	else
 	{
-		nodls *temp = cap;
+		NodLS *temp = cap;
 		while(temp->next!=NULL)
 			temp = temp->next;
 		temp->next = nou;
@@ -132,3 +138,111 @@ NodLS* inserare(NodLS* cap, Produs p) {
 </tbody>
 </table>
 <!--************************************ TABEL****************************************************-->
+
+2️⃣**PAS 2: Functie de `Traversare cu afisare`**</br>
+**Traversarea listei cu afisare - traversarea o facem pana aux !=NULL, nu pana la aux->next !=NULL  ca mai sus pentru ca ar ramane orimul nod neafisat.**</br>
+
+<!--************************************ TABEL****************************************************-->
+<table>
+<tbody>
+<!------------------------------------------ TITLU-------------------------------------------------->
+<tr>
+<th>Limbajul C</th>
+<th>Limbajul C++</th>
+</tr>
+<!----------------------------------------- TITLU--------------------------------------------------->	
+<!--------------------------------------- PRIMA COLOANA - LIMBAJUL C--------------------------------->
+<tr>-
+<td>
+
+```cpp
+//Functie de taversare cu afisare a listei
+void traversare(nodls *cap)
+{
+	nodls * temp = cap;
+	while(temp!=NULL)
+	{
+		printf("\nCod=%d, Denumire=%s, Pret=%5.2f, Cantitate=%5.2f",
+			temp->inf->cod, temp->inf->denumire, temp->inf->pret, temp->inf->cantitate);
+		temp=temp->next;
+	}
+}
+```
+				
+</td>
+<!------------------------------------ A DOUA COLOANA - LIMBAJUL C++------------------------------------>
+<td>
+	
+```cpp
+//Functie de taversare cu afisare a listei
+void traversare(nodls* cap)
+{
+	nodls* temp = cap;
+	while (temp != NULL)
+	{
+		cout << "Cod = " << temp->inf.cod << " Denumire = " << temp->inf.denumire << " Pret = " << temp->inf.pret << " Cantitate = " << temp->inf.cantitate << endl;
+		temp = temp->next;
+	}
+}
+```
+
+</td>
+</tr>
+</tbody>
+</table>
+<!--************************************ TABEL****************************************************-->
+
+2️⃣**PAS 2: Functie de `Traversare cu dezalocare`**</br>
+**Traversarea listei cu dezalocare - avem de sters fiecare denumire si fiecare nod in parte. Daca facem stergerea o sa se sterga si pointerul next. De accea ar trebui ca inainte sa apelez acel delete sa retin pe temp->next.**</br>
+
+<!--************************************ TABEL****************************************************-->
+<table>
+<tbody>
+<!------------------------------------------ TITLU-------------------------------------------------->
+<tr>
+<th>Limbajul C</th>
+<th>Limbajul C++</th>
+</tr>
+<!----------------------------------------- TITLU--------------------------------------------------->	
+<!--------------------------------------- PRIMA COLOANA - LIMBAJUL C--------------------------------->
+<tr>-
+<td>
+	
+```cpp
+void dezalocare(nodls *cap)
+{
+	nodls *temp = cap;
+	while(temp!=NULL)
+	{
+		nodls* temp2 = temp->next;
+		free(temp->inf->denumire);
+		free(temp->inf);
+		free(temp);
+		temp = temp2;
+	}
+}
+```
+				
+</td>
+<!------------------------------------ A DOUA COLOANA - LIMBAJUL C++------------------------------------>
+<td>
+	
+```cpp
+void dezalocare(nodls* cap)
+{
+	nodls* temp = cap;
+	while (temp != NULL)
+	{
+		nodls* temp2 = temp->next;
+		delete[] temp->inf.denumire;
+		delete temp;
+		temp = temp2;
+	}
+```
+
+</td>
+</tr>
+</tbody>
+</table>
+<!--************************************ TABEL****************************************************-->
+
