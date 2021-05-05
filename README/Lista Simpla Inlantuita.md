@@ -24,13 +24,13 @@ struct Produs {
 };
 ```
 
-0️⃣**PAS 0: Definim structura Nodls**</br>
-*In structura Nodls avem informatie utila de tip Produs si pointerul de legatura.*</br>
+0️⃣**PAS 0: Definim structura NodLista**</br>
+*In structura NodLista avem informatie utila de tip Produs si pointerul de legatura.*</br>
 ```cpp
 struct Nodls
 {
-	produs inf;
-	nodls *next;
+	Produs infoUtila;
+	NodLista *next;
 };
 ```
 
@@ -38,7 +38,7 @@ struct Nodls
 **Avem o functie de `creare Nod` care sa imi creeze primul nod din lista si apoi cu functie de inserare adaugam in lista nodurile urmatoare.Adaugarea nodurilor in lista se va face la finalul lui Nod Cap.**</br>
 
 1️⃣**PAS 1: Functie de `Creare Nod`**</br>
-Returnam Nodls* si primim ca parametri nolds* cap (adresa de inceput a structurii si informatie utila de tip Produs).</br>
+Returnam NodLista* si primim ca parametri NoldLista* cap (adresa de inceput a structurii si informatie utila de tip Produs).</br>
 - Fiecare nod inseamna un spatiu alocat in HEAP trebuie sa definim un Nodls* nou care trebuie alocat.
 - Initializam componentele nodului: Informatia utila (cod, denumire, pret, cantitate) si Pointerul de legatura.
 
@@ -57,31 +57,31 @@ Returnam Nodls* si primim ca parametri nolds* cap (adresa de inceput a structuri
 
 ```cpp
 //Functie de inserare in lista simpla
-nodls* inserare(NodLS *cap, Produs p)
+NodLista* inserare(NodLista *nodCap, Produs p)
 {
-	NodLS *nou = (nodls*)malloc(sizeof(nNdLS));
+	NodLista *nodNou = (NodLista*)malloc(sizeof(NodLista));
 	
 	//Initializam componentele din nod 
 	//-- Informatia Utila
-	nou->inf->denumire = (char*)malloc((strlen(p->denumire)+1)*sizeof(char));
-	strcpy(nou->inf->denumire, p->denumire);
-	nou->inf->cod = p->cod;
-	nou->inf->pret = p->pret;
-	nou->inf->cantitate = p->cantitate;
+	nodNou->infoUtila->denumire = (char*)malloc((strlen(p->denumire)+1)*sizeof(char));
+	strcpy(nodNou->infoUtila->denumire, p->denumire);
+	nodNou->infoUtila->cod = p->cod;
+	nodNou->infoUtila->pret = p->pret;
+	nodNou->infoUtila->cantitate = p->cantitate;
 	
 	//-- Pointerul de legatura catre nodul urmator
-	nou->next = NULL;
+	nodNou->next = NULL;
 	
-	if(cap==NULL)
-		cap = nou;
+	if(nodCap==NULL)
+		nodCap = nodNou;
 	else
 	{
-		NodLS *temp = cap;
-		while(temp->next!=NULL)
-			temp = temp->next;
-		temp->next = nou;
+		NodLista *nodTemporar = nodCap;
+		while(nodTemporar->next!=NULL)
+			nodTemporar = nodTemporar->next;
+		nodTemporar->next = nodNou;
 	}
-	return cap;
+	return nodCap;
 }
 
 
@@ -93,24 +93,24 @@ nodls* inserare(NodLS *cap, Produs p)
 	
 ```cpp
 //Functie de inserare in lista simpla
-NodLS* inserare(NodLS* cap, Produs p) {
-	NodLS* nodNou = new NodLS;
+NodLista* inserare(NodLista* nodCap, Produs p) {
+	NodLista* nodNou = new NodLista;
 
 	//Initializam componentele din nod 
 	//-- Informatia Utila
-	nodNou->inf.cod = p.cod;
-	nodNou->inf.denumire = new char[strlen(p.denumire)+1];
-	strcpy(nodNou->inf.denumire, p.denumire);
-	nodNou->inf.pret = p.pret;
-	nodNou->inf.cantitate = p.cantitate;
+	nodNou->infoUtila.cod = p.cod;
+	nodNou->infoUtila.denumire = new char[strlen(p.denumire)+1];
+	strcpy(nodNou->infoUtila.denumire, p.denumire);
+	nodNou->infoUtila.pret = p.pret;
+	nodNou->infoUtila.cantitate = p.cantitate;
 
 	//-- Pointerul de legatura catre nodul urmator
 	nodNou->next = NULL;
 
 
 	//*** FUNCTIA SE APELEAZA SI ATUNCI CAND LISTA E GOALA, DAR SI ATUNCI CAND VOI ADAUGA NODUL LA FINAL
-	if (cap == NULL) {
-		cap = nodNou;		//Daca pointerul cap este NULL inseamna ca nu exista nici un nod in lista - vom face pointerul cap 
+	if (nodCap == NULL) {
+		nodCap = nodNou;		//Daca pointerul cap este NULL inseamna ca nu exista nici un nod in lista - vom face pointerul cap 
 							// sa pointeze catre primul nod creat, adica spre nodNouu
 	}
 	else {						//Daca pointerul nu este NULL inseamna ca mai exista noduri in lista, 
@@ -118,14 +118,14 @@ NodLS* inserare(NodLS* cap, Produs p) {
 
 //Ne creem un nod auxiliar cu care sa parcurgem lista si cat timp nodul pe care ne pozitionam nu are pointerul NULL, mergem mai departe
 //In momentul in care iesim din while adica am intalnit un nod care este NULL, atunci nodul auxiliar devine noul nod inserat
-		NodLS* aux = cap;		
+		NodLista* nodTemporar = nodCap;		
 	
-		while (aux->next != NULL) {
-			aux = aux->next;
+		while (nodTemporar->next != NULL) {
+			nodTemporar = nodTemporar->next;
 		}
-		aux->next = nodNou;
+		nodTemporar->next = nodNou;
 	}
-	return cap;	// Returnam cap deoarece functia returneaza Nodls* (adica o adresa) - adresa primului nod din lista indiferent de situatie
+	return nodCap;	// Returnam cap deoarece functia returneaza Nodls* (adica o adresa) - adresa primului nod din lista indiferent de situatie
 
 
 	//Daca lista e NULL, pointerul cap este NULL initial si la sfarsit returneaza adresa valida a unui spatiu alocat si initializat cu nodul nou
@@ -157,14 +157,14 @@ NodLS* inserare(NodLS* cap, Produs p) {
 
 ```cpp
 //Functie de taversare cu afisare a listei
-void traversare(nodls *cap)
+void traversare(NodLista *cap)
 {
-	nodls * temp = cap;
-	while(temp!=NULL)
+	nodLista * nodTemporar = nodCap;
+	while(nodTemporar!=NULL)
 	{
 		printf("\nCod=%d, Denumire=%s, Pret=%5.2f, Cantitate=%5.2f",
-			temp->inf->cod, temp->inf->denumire, temp->inf->pret, temp->inf->cantitate);
-		temp=temp->next;
+			nodTemporar->infoUtila->cod, nodTemporar->infoUtila->denumire, nodTemporar->infoUtila->pret, nodTemporar->infoUtila->cantitate);
+		nodTemporar=nodTemporar->next;
 	}
 }
 ```
@@ -177,11 +177,11 @@ void traversare(nodls *cap)
 //Functie de taversare cu afisare a listei
 void traversare(nodls* cap)
 {
-	nodls* temp = cap;
-	while (temp != NULL)
+	nodLista* nodTemporar = nodCapcap;
+	while (nodTemporar != NULL)
 	{
-		cout << "Cod = " << temp->inf.cod << " Denumire = " << temp->inf.denumire << " Pret = " << temp->inf.pret << " Cantitate = " << temp->inf.cantitate << endl;
-		temp = temp->next;
+		cout << "Cod = " << nodTemporar->infoUtila.cod << " Denumire = " << nodTemporar->infoUtila.denumire << " Pret = " << nodTemporar->infoUtila.pret << " Cantitate = " << nodTemporar->infoUtila.cantitate << endl;
+		nodTemporar = nodTemporar->next;
 	}
 }
 ```
@@ -209,16 +209,16 @@ void traversare(nodls* cap)
 <td>
 	
 ```cpp
-void dezalocare(nodls *cap)
+void dezalocare(NodLista *nodCap)
 {
-	nodls *temp = cap;
-	while(temp!=NULL)
+	NodLista *nodTemporar = nodCap;
+	while(nodTemporar!= NULL)
 	{
-		nodls* temp2 = temp->next;
-		free(temp->inf->denumire);
-		free(temp->inf);
-		free(temp);
-		temp = temp2;
+		NodLista* nodTemporar2 = nodTemporar->next;
+		free(nodTemporar->infoUtila->denumire);
+		free(nodTemporar->infoUtila);
+		free(nodTemporar);
+		nodTemporar = nodTemporar2;
 	}
 }
 ```
@@ -228,15 +228,15 @@ void dezalocare(nodls *cap)
 <td>
 	
 ```cpp
-void dezalocare(nodls* cap)
+void dezalocare(NodLista* cap)
 {
-	nodls* temp = cap;
-	while (temp != NULL)
+	NodLsta* nodTemporar = nodap;
+	while (nodTemporar != NULL)
 	{
-		nodls* temp2 = temp->next;
-		delete[] temp->inf.denumire;
-		delete temp;
-		temp = temp2;
+		nodLista* nodTemporar2 = nodTemporar->next;
+		delete[] nodTemporar->infoUtila.denumire;
+		delete nodTemporar;
+		nodTemporar = nodTemporar2;
 	}
 ```
 
