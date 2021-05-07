@@ -102,7 +102,7 @@ void dezalocareVector(Produs* p, int n) {
 	}
 	free(p);*/
 }
-
+/*
 //************************************* VECTOR DE TIPURI FUNDAMENTALE - INT, CHAR, FLOAT*******************************
 // in loc de char* o sa le avem pe toate cu steluta - adica o sa avem un vector de vectori (pointeri)
 
@@ -278,14 +278,14 @@ void main() {
 		cin >> n;
 	
 	//******** VARIANTA C++***************
-	/*/
+	
 	//Alocare spatiu pentru vector de produse
 	Produs* p = new Produs[n];
 
 	//Apelul functiilor anterior create
 	citireVector(p, n);
 	afisareVector(p, n);
-	dezalocareVector(p, n);*/
+	dezalocareVector(p, n);
 
 	//************ VARIANTA C *****************
 /*	int n;
@@ -308,6 +308,7 @@ void main() {
 	afisare4Vectori(cod, denumire, pret, cantitate, n);
 	dezalocare4Vectori(cod, denumire, pret, cantitate, n);*/
 
+		/*
 	//ALOCARE MATRICE 
 
 	float** mat = new float* [n];
@@ -325,10 +326,10 @@ void main() {
 	dezalocareMatrice(mat, denumire, n);*/
 
 	//APEL FUNCTII MATRICE
-	citireMatrice(mat, n);
-	afisareMatrice(mat, n);
-	cout << "Suma totala este: " << sumaTotala(mat, n);
-	dezalocareMatrice(mat, n);
+	//citireMatrice(mat, n);
+	//afisareMatrice(mat, n);
+	//cout << "Suma totala este: " << sumaTotala(mat, n);
+	//dezalocareMatrice(mat, n);
 	
 
 	
