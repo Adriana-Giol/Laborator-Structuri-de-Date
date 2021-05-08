@@ -9,10 +9,11 @@
 ✔️[**2. Matrice**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Matrice.md)</br>
 
 ## I. Structuri de Date dinamice necontigue
-⚠️[**1. Lista simpla inlantuita**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Lista%20Simpla%20Inlantuita.md)</br>
-[**2. Lista dubla inlantuita**]()</br>
-[**3. Stiva**]()</br>
-[**4. Coada**]()</br>
+|                     |                        |                       |                        |
+|---------------------|------------------------|-----------------------|------------------------|
+|[**1. Lista simpla inlantuita**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Lista%20Simpla%20Inlantuita.md)|[**2. Lista dubla inlantuita**]()|[**3. Stiva**]()|[**4. Coada**]()|
+|🔴[**1. Inserare - inceput/sfarsit/dupa un element**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/03.%20Lista%20Simpla%20Inlantuita%20-%20Inserare.md)|🔴[**1. Inserare**]()|🔴[**1. Inserare**]()|🔴[**1. Inserare**]()|
+
 
 ## II. Matrice rare
 1. Structuri de date neomogene si contigue
