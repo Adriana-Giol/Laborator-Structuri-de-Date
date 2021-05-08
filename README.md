@@ -1,4 +1,7 @@
 # 📚Structuri de Date📚
+**Resurse:**
+[**Programiz**](https://www.programiz.com/dsa)</br>
+
 ✔️[**Prezentare Generala**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/Prezentare%20Generala.md)
 
 ## Recapitulare
