@@ -1,10 +1,14 @@
 # 1. Lista Simplu Inlantuita
+
+## 🗝️ I. Definitie:
 Lista Simplu Inlantuita = O inlantuire de noduri si fiecare nod are un pointer catre nodul urmator.
 - Lista se va crea nod cu nod.</br>
 - Este o structura de date dinamica cu acces secvential.</br>
 
-## 🗝️ Rezolvare: </br>
-![Lista Simpla -Inserare, Dezalocare, Afisare](https://user-images.githubusercontent.com/60271540/117066914-0479e700-ad32-11eb-84ff-4a07b7ac37f9.png)
+## 🗝️ II. Schema: </br>
+![Definire Lista Simplu Inlantuita](https://user-images.githubusercontent.com/60271540/117518301-e4535d80-afa7-11eb-9e78-e1375ec55311.png)
+
+## 🗝️ III. Definire Structura de Lucru: </br>
 
 0️⃣**PAS 0: Definim structura Produs**</br>
 ```cpp
@@ -20,7 +24,7 @@ struct Produs {
 	float cantitate;
 };
 ```
-
+## 🗝️ IV. Etape Realizare Lista Simplu Inlantuita
 1️⃣**PAS 1: Definim structura listei - NodLista**</br>
 *In structura NodLista avem informatie utila de tip Produs si pointerul de legatura.*</br>
 ```cpp
@@ -34,9 +38,9 @@ struct NodLista
 **Pentru fiecare nod in parte trebuie sa alocam denumirile si spatiul in sine pentru Nod. Acum un nod ocupa: 20B = 16B(informatie utila) + 4B(pointerul de lagtura).**</br>
 **Avem o functie de `creare Nod` care sa imi creeze primul nod din lista si apoi cu functie de inserare adaugam in lista nodurile urmatoare.Adaugarea nodurilor in lista se va face la finalul lui Nod Cap.**</br>
 
-## Operatii cu liste
+## V. Operatii pe Lista Simpla Inlantuita
 
-2️⃣**PAS 2: Functie de `Creare Nod`**</br>
+2️⃣**PAS 2: Functie de `Inserare Nod`**</br>
 Returnam NodLista* si primim ca parametri NoldLista* cap (adresa de inceput a structurii si informatie utila de tip Produs).</br>
 - Fiecare nod inseamna un spatiu alocat in HEAP trebuie sa definim un Nodls* nou care trebuie alocat.
 - Initializam componentele nodului: Informatia utila (cod, denumire, pret, cantitate) si Pointerul de legatura.
