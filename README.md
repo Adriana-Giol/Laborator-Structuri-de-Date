@@ -12,10 +12,10 @@
 ### 1. Liste (List)
 |                     |                        |                       |
 |---------------------|------------------------|-----------------------|
-|[**1. Lista simplu inlantuita**]()|[**2. Lista dublu inlantuita**]()|[**3. Lista circular inlantuita**]()|
-|🔴[**1. Inserare**]()|🔴[**1. Inserare**]()|🔴[**1. Inserare**]()|
-|🟠[**2. Traversare cu afisare**]()|🟠[**2. Traversare cu afisare**]()|🟠[**2. Traversare cu afisare**]()|
-|🟡[**3. Stergere**]()|🟡[**3. Stergere**]()|🟡[**3. Stergere**]()|
+|[**1. Lista simplu inlantuita**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/03.%20Lista%20Simplu%20Inlantuita%20-%20Definire.md)|[**2. Lista dublu inlantuita**]()|[**3. Lista circular inlantuita**]()|
+|🔴[**1. Inserare**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/03.%20Lista%20Simpla%20Inlantuita%20-%20Inserare.md)|🔴[**1. Inserare**]()|🔴[**1. Inserare**]()|
+|🟠[**2. Traversare cu afisare**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/03.%20Lista%20Simplu%20Inlantuita%20-%20Traversare%20cu%20afisare.md)|🟠[**2. Traversare cu afisare**]()|🟠[**2. Traversare cu afisare**]()|
+|🟡[**3. Stergere**](https://github.com/Adriana-Giol/Structuri-de-Date/blob/main/README/03.%20Lista%20Simpla%20Inlantuita%20-%20Dezalocare.md)|🟡[**3. Stergere**]()|🟡[**3. Stergere**]()|
 
 ### 2. Stiva (Stack)
 |                     |
